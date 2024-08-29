@@ -30,16 +30,16 @@ This project provides PowerShell scripts to add and remove "Open with Cursor" op
 
 ## 🚀 Installation
 
-1. Download the `install-open-with-cursor.ps1` script.
-2. Right-click on the script and select "Run with PowerShell".
+1. Download the `install-open-with-cursor.ps1` script from https://github.com/Puliczek/open-with-cursor-context-menu/raw/main/install-open-with-cursor.ps1
+2. Right-click on the downloaded script and select "Run with PowerShell".
 3. If prompted, allow the script to run with administrator privileges.
 
 The script will automatically add the "Open with Cursor" options to your context menus. ✅
 
 ## 🗑️ Uninstallation
 
-1. Download the `uninstall-open-with-cursor.ps1` script.
-2. Right-click on the script and select "Run with PowerShell".
+1. Download the `uninstall-open-with-cursor.ps1` script from https://github.com/Puliczek/open-with-cursor-context-menu/raw/main/uninstall-open-with-cursor.ps1
+2. Right-click on the downloaded script and select "Run with PowerShell".
 3. If prompted, allow the script to run with administrator privileges.
 
 The script will remove all "Open with Cursor" entries from your context menus. ❌
