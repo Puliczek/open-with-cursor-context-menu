@@ -36,6 +36,20 @@ This project provides PowerShell scripts to add and remove "Open with Cursor" op
 
 The script will automatically add the "Open with Cursor" options to your context menus. ✅
 
+## 🔧 Troubleshooting 
+
+If the context menu options don't appear immediately after running the installation script:
+
+Restart Windows Explorer using Terminal:
+
+   - Press Win + X and select "Terminal (Admin)"
+   - Run the following command:
+     ```powershell
+     Stop-Process -Name explorer -Force; Start-Process explorer
+     ```
+
+   This command will close and restart Windows Explorer, which should refresh your context menu without requiring a full system restart. 🔄🖱️
+
 ## 🗑️ Uninstallation
 
 1. Download the `uninstall-open-with-cursor.ps1` script from https://github.com/Puliczek/open-with-cursor-context-menu/raw/main/uninstall-open-with-cursor.ps1
