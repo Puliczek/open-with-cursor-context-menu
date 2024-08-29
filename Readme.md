@@ -3,11 +3,14 @@
     🤝 Show your support - give a ⭐️ if you liked the content
   </p>
   <p>
-    <a target="_blank" href='https://twitter.com/pulik_io'><img src="https://img.shields.io/twitter/follow/pulik_io" alt="X (formerly Twitter) Follow"/></a>
+    <a target="_blank" href='https://twitter.com/pulik_io'><img src="https://img.shields.io/twitter/follow/pulik_io" alt="X (formerly Twitter) Follow" width="180" height="30"/></a>
   </p>
 </div>
 
 ---
+
+
+
 
 # 🖱️ Open with Cursor in Context Menu
 
