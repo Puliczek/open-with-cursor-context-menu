@@ -28,21 +28,21 @@ if (Test-Path $cursorExePath) {
     $backgroundPath = "HKEY_CLASSES_ROOT\Directory\Background\shell\Open with Cursor"
     Run-RegCommand "ADD `"$backgroundPath`" /ve /d `"Open with Cursor`" /f"
     Run-RegCommand "ADD `"$backgroundPath`" /v Icon /d `"$cursorExePath`" /f"
-    Run-RegCommand "ADD `"$backgroundPath\command`" /ve /d `"`"$cursorExePath`" `"%V`"`" /f"
+    Run-RegCommand "ADD `"$backgroundPath\command`" /ve /d `"\`"$cursorExePath\`" \`"%V\`"`" /f"
     Write-Host "Context menu for background installed successfully."
 
     # # Install context menu for folders
     $folderPath = "HKEY_CLASSES_ROOT\Directory\shell\Open with Cursor"
     Run-RegCommand "ADD `"$folderPath`" /ve /d `"Open with Cursor`" /f"
     Run-RegCommand "ADD `"$folderPath`" /v Icon /d `"$cursorExePath`" /f"
-    Run-RegCommand "ADD `"$folderPath\command`" /ve /d `"`"$cursorExePath`" `"%1`"`" /f"
+    Run-RegCommand "ADD `"$folderPath\command`" /ve /d `"\`"$cursorExePath\`" \`"%1\`"`" /f"
     Write-Host "Context menu for folders installed successfully."
 
     # Install context menu for files
     $filePath = "HKEY_CLASSES_ROOT\*\shell\Open with Cursor"
     Run-RegCommand "ADD `"$filePath`" /ve /d `"Open with Cursor`" /f"
     Run-RegCommand "ADD `"$filePath`" /v Icon /d `"$cursorExePath`" /f"
-    Run-RegCommand "ADD `"$filePath\command`" /ve /d `"`"$cursorExePath`" `"%1`"`" /f"
+    Run-RegCommand "ADD `"$filePath\command`" /ve /d `"\`"$cursorExePath\`" \`"%1\`"`" /f"
     Write-Host "Context menu for files installed successfully."
 
 } else {
