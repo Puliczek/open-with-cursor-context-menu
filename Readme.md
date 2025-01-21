@@ -38,6 +38,21 @@ The script will automatically add the "Open with Cursor" options to your context
 
 ## 🔧 Troubleshooting 
 
+If you see following tips: can not load ...., seee about_Execution_Policies
+
+You need to run command like 
+
+```bash
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+```
+
+It will allow you run ps1 scripts from github, after done, please run following command to reset it
+
+```bash
+
+Set-ExecutionPolicy -ExecutionPolicy Default -Scope CurrentUser
+```
+
 If the context menu options don't appear immediately after running the installation script:
 
 Restart Windows Explorer using Terminal:
